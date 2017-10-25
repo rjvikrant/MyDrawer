@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_login"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginLeft="@dimen/ll_margin_left"
+        android:layout_marginRight="@dimen/ll_margin_left"
+        >
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Father Status"
+            android:layout_weight=".5"/>
+
+        <Spinner
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:id="@+id/spi_father_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginLeft="@dimen/ll_margin_left"
+        android:layout_marginRight="@dimen/ll_margin_left"
+        >
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Father Working As"
+            android:layout_weight=".5"/>
+
+        <Spinner
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:id="@+id/spi_father_working_as"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginLeft="@dimen/ll_margin_left"
+        android:layout_marginRight="@dimen/ll_margin_left"
+        >
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mother Status"
+            android:layout_weight=".5"/>
+
+        <Spinner
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:id="@+id/spi_mother_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginLeft="@dimen/ll_margin_left"
+        android:layout_marginRight="@dimen/ll_margin_left"
+        >
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No. of Brothers"
+            android:layout_weight=".5"/>
+
+        <Spinner
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:id="@+id/spi_num_of_brothers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginLeft="@dimen/ll_margin_left"
+        android:layout_marginRight="@dimen/ll_margin_left"
+        >
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No. of Married Brothers"
+            android:layout_weight=".5"/>
+
+        <Spinner
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:id="@+id/spi_num_of_married_brothers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. of Sisters"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_num_of_sisters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. of Married Sisters"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_num_of_married_sisters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="State"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="District"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Area Name"
+                android:layout_weight=".5"/>
+
+            <EditText
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:id="@+id/edt_area_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:enabled="false"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Native Place"
+                android:layout_weight=".5"/>
+
+            <EditText
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/edt_native_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Family Affluence Level"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_family_affluence_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Family Type"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_family_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:background="#ffccff"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Family Properties"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_family_properties"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="top"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lines="5"
+            android:id="@+id/ta_relative_surnames"
+            android:hint="Enter Your relatives surnames :"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

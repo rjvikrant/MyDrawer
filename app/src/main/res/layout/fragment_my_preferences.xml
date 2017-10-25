@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_login"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="?attr/actionBarSize">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginLeft="@dimen/ll_margin_left"
+        android:layout_marginRight="@dimen/ll_margin_left"
+        >
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Age From"
+            android:layout_weight=".5"/>
+
+        <Spinner
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:id="@+id/spi_age_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginLeft="@dimen/ll_margin_left"
+        android:layout_marginRight="@dimen/ll_margin_left"
+        >
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Age To"
+            android:layout_weight=".5"/>
+
+        <Spinner
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:id="@+id/spi_age_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginLeft="@dimen/ll_margin_left"
+        android:layout_marginRight="@dimen/ll_margin_left"
+        >
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Height From"
+            android:layout_weight=".5"/>
+
+        <Spinner
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:id="@+id/spi_height_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginLeft="@dimen/ll_margin_left"
+        android:layout_marginRight="@dimen/ll_margin_left"
+        >
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Height To"
+            android:layout_weight=".5"/>
+
+        <Spinner
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:id="@+id/spi_height_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Raashi"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_raashi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Charan"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_charan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mother Tonuge"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_mother_tongue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Religion"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_religion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Community"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_community"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sub Community"
+                android:layout_weight=".5"/>
+
+            <EditText
+                android:fontFamily="sans-serif"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/edt_sub_community"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gotra"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_gotra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nakshtra"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_nakshtra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marital Status"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_martial_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Skin Tone"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_skin_tone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Body Type"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_body_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Smoke"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_smoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Drink"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_drink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Spectacles Lens"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_spectacles_lens"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Diet"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_diet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

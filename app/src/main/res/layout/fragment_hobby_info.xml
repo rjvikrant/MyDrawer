@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_login"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginLeft="@dimen/ll_margin_left"
+        android:layout_marginRight="@dimen/ll_margin_left"
+        >
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Interests"
+            android:layout_weight=".5"/>
+
+        <Spinner
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:id="@+id/spi_interest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginLeft="@dimen/ll_margin_left"
+        android:layout_marginRight="@dimen/ll_margin_left"
+        >
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fav. Reads"
+            android:layout_weight=".5"/>
+
+        <Spinner
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:id="@+id/spi_fav_reads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginLeft="@dimen/ll_margin_left"
+        android:layout_marginRight="@dimen/ll_margin_left"
+        >
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fav. Music"
+            android:layout_weight=".5"/>
+
+        <Spinner
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:id="@+id/spi_fav_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginLeft="@dimen/ll_margin_left"
+        android:layout_marginRight="@dimen/ll_margin_left"
+        >
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fav. Cuisines"
+            android:layout_weight=".5"/>
+
+        <Spinner
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:id="@+id/spi_fav_cuisines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginLeft="@dimen/ll_margin_left"
+        android:layout_marginRight="@dimen/ll_margin_left"
+        >
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sports Fitness Activites"
+            android:layout_weight=".5"/>
+
+        <Spinner
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:id="@+id/spi_fitness_activites"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Preferred Dressing Style"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_preferred_Dressing_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Preferred Movies"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_preferred_movies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

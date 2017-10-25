@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_login"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginLeft="@dimen/ll_margin_left"
+        android:layout_marginRight="@dimen/ll_margin_left"
+        >
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rashi"
+            android:layout_weight=".5"/>
+
+        <Spinner
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:id="@+id/spi_rashi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginLeft="@dimen/ll_margin_left"
+        android:layout_marginRight="@dimen/ll_margin_left"
+        >
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nakshtra"
+            android:layout_weight=".5"/>
+
+        <Spinner
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:id="@+id/spi_nakshtra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginLeft="@dimen/ll_margin_left"
+        android:layout_marginRight="@dimen/ll_margin_left"
+        >
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Charan"
+            android:layout_weight=".5"/>
+
+        <Spinner
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:id="@+id/spi_charan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginLeft="@dimen/ll_margin_left"
+        android:layout_marginRight="@dimen/ll_margin_left"
+        >
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nadi"
+            android:layout_weight=".5"/>
+
+        <Spinner
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:id="@+id/spi_nadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginLeft="@dimen/ll_margin_left"
+        android:layout_marginRight="@dimen/ll_margin_left"
+        >
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gotra"
+            android:layout_weight=".5"/>
+
+        <Spinner
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"
+            android:id="@+id/spi_gotra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/ll_margin_left"
+            android:layout_marginRight="@dimen/ll_margin_left"
+            >
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manglic"
+                android:layout_weight=".5"/>
+
+            <Spinner
+                android:textSize="@dimen/text_size"
+                android:layout_margin="5dp"
+                android:id="@+id/spi_maglic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

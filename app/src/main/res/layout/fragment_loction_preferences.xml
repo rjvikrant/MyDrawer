@@ -58,14 +58,13 @@
                 android:text="State"
                 android:layout_weight=".5"/>
 
-            <Spinner
-                android:textSize="@dimen/text_size"
-                android:layout_margin="5dp"
-                android:id="@+id/spi_state"
+            <via.vik.mydrawer.Widgets.MultiSpinner
+                android:id="@+id/multi_spinner_state"
+                android:textAlignment="center"
+                android:layout_height="match_parent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight=".5"
-                android:enabled="false"/>
+                android:enabled="false"
+                ></via.vik.mydrawer.Widgets.MultiSpinner>
 
         </LinearLayout>
 
@@ -87,15 +86,13 @@
                 android:text="City"
                 android:layout_weight=".5"/>
 
-            <Spinner
-                android:textSize="@dimen/text_size"
-                android:layout_margin="5dp"
-                android:id="@+id/spi_city"
+            <via.vik.mydrawer.Widgets.MultiSpinner
+                android:id="@+id/multi_spinner_city"
+                android:textAlignment="center"
+                android:layout_height="match_parent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight=".5"
-                android:enabled="false"/>
-
+                android:enabled="false"
+                ></via.vik.mydrawer.Widgets.MultiSpinner>
         </LinearLayout>
 
 
@@ -127,14 +124,22 @@
                 android:text="Family Affluence Level"
                 android:layout_weight=".5"/>
 
-            <Spinner
+            <via.vik.mydrawer.Widgets.MultiSpinner
+                android:id="@+id/multi_spinner_family_affection_level"
+                android:textAlignment="center"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:enabled="false"
+                ></via.vik.mydrawer.Widgets.MultiSpinner>
+
+           <!-- <Spinner
                 android:textSize="@dimen/text_size"
                 android:layout_margin="5dp"
                 android:id="@+id/spi_family_affluence_level"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight=".5"
-                android:enabled="false"/>
+                android:enabled="false"/>-->
 
         </LinearLayout>
 
@@ -155,14 +160,22 @@
                 android:text="Family Type"
                 android:layout_weight=".5"/>
 
-            <Spinner
+            <via.vik.mydrawer.Widgets.MultiSpinner
+                android:id="@+id/multi_spinner_family_type"
+                android:textAlignment="center"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:enabled="false"
+                ></via.vik.mydrawer.Widgets.MultiSpinner>
+
+           <!-- <Spinner
                 android:textSize="@dimen/text_size"
                 android:layout_margin="5dp"
                 android:id="@+id/spi_family_type"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight=".5"
-                android:enabled="false"/>
+                android:enabled="false"/>-->
 
         </LinearLayout>
 

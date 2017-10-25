@@ -32,13 +32,14 @@
         <item>Edit Profile</item>
         <item>My Preferences</item>
         <item>Shortlisted Profiles</item>
+        <item>About Us</item>
         <item>Settings</item>
     </string-array>
     <string name="title_activity_sign_up">SignUpActivity</string>
     <string name="text_sign_up">By clicking ‘Sign Up Free’ you agree to our Terms</string>
     <string name="about_us">
 
-	 \n\n\t<b>Kande-Pohe.com</b> is Marathi matrimony, handcrafted especially for all you Marathi breed, existing anywhere on the planet earth or on the Mars for that matter, with a sole purpose of helping you find your life partner.
+	 \n\t<b>Kande-Pohe.com</b> is Marathi matrimony, handcrafted especially for all you Marathi breed, existing anywhere on the planet earth or on the Mars for that matter, with a sole purpose of helping you find your life partner.
 
 
 	\n\n\tDay and night, we are working to bring all lovely Marathi soon-to-be brides and grooms at Kande-Pohe.com, who can be best matches for you. We just want you to find your soul mate at Kande-Pohe.com!
@@ -57,4 +58,5 @@
 
     </string>
     <string name="name">Vikrant A</string>
+    <string name="for_all">-Select-</string>
 </resources>

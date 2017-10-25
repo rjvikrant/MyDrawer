@@ -19,6 +19,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import via.vik.mydrawer.fragments.AboutUsFragment;
 import via.vik.mydrawer.fragments.HomeFragment;
 import via.vik.mydrawer.fragments.PartnerPreferences.PartnerPreferencesFragment;
 import via.vik.mydrawer.fragments.ProfileFragment;
@@ -28,6 +29,7 @@ import via.vik.mydrawer.fragments.settings.SettingFragment;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private static final String TAG_ABOUT ="about" ;
     NavigationView navigationView;
     DrawerLayout drawer;
     public static int navItemIndex = 0;
@@ -154,23 +156,6 @@ public class MainActivity extends AppCompatActivity
             navItemIndex = 1;
             CURRENT_TAG = TAG_GALLERY;
 
-        } else if (id == R.id.nav_slideshow) {
-            navItemIndex = 4;
-            CURRENT_TAG = TAG_SHORTLISTED;
-
-        } else if (id == R.id.nav_manage) {
-
-            startActivity(new Intent(MainActivity.this,AboutUs.class));
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
-        }else if (id == R.id.nav_settings){
-
-            navItemIndex=5;
-            CURRENT_TAG=TAG_SETTINGS;
-
         }else if (id == R.id.nav_profile){
             navItemIndex = 2;
             CURRENT_TAG = TAG_PROFILE;
@@ -178,6 +163,25 @@ public class MainActivity extends AppCompatActivity
         }else if (id == R.id.nav_preferences){
             navItemIndex = 3;
             CURRENT_TAG = TAG_PREFERENCES;
+
+        } else if (id == R.id.nav_slideshow) {
+            navItemIndex = 4;
+            CURRENT_TAG = TAG_SHORTLISTED;
+
+        }else if (id == R.id.nav_manage){
+
+        navItemIndex=5;
+        CURRENT_TAG=TAG_ABOUT;
+
+        }else if (id == R.id.nav_settings){
+
+            navItemIndex=6;
+            CURRENT_TAG=TAG_SETTINGS;
+
+        } else if (id == R.id.nav_share) {
+
+        } else if (id == R.id.nav_send) {
+
         }
 
 
@@ -254,28 +258,33 @@ public class MainActivity extends AppCompatActivity
                 // Gallery
                 ShortListedProfileFragments moviesFragment = new ShortListedProfileFragments();
                 return moviesFragment;
-            case 4:
-                // Shortlisted profiles
-                ShortListedProfileFragments moviesFragment1 = new ShortListedProfileFragments();
-                return moviesFragment1;
+
 
             case 2:
                 ProfileFragment profileFragment = new ProfileFragment(mainActivity);
                 return  profileFragment;
-           /* case 3:
-                // about us
-                NotificationsFragment notificationsFragment = new NotificationsFragment();
-                return notificationsFragment;
-*/
+
             case 3:
                 // settings
                 PartnerPreferencesFragment partnerPreferencesFragment = new PartnerPreferencesFragment(mainActivity);
                 return partnerPreferencesFragment;
 
+            case 4:
+                // Shortlisted profiles
+                ShortListedProfileFragments moviesFragment1 = new ShortListedProfileFragments();
+                return moviesFragment1;
 
-            case 5:
+            case 6:
                 SettingFragment settingFragment=new SettingFragment();
                 return settingFragment;
+
+
+            case 5:
+                // settings
+                AboutUsFragment aboutUsFragment = new AboutUsFragment();
+                return aboutUsFragment;
+
+
 
             default:
                 return new HomeFragment();
@@ -285,9 +294,28 @@ public class MainActivity extends AppCompatActivity
     private void toggleFab() {
         if (navItemIndex == 1 )
             fab.show();
+
+        else if (navItemIndex ==2){
+
+            fab.show();
+            fab.setImageResource(R.drawable.ic_edit);
+        }
+
         else if ( navItemIndex == 3 ) {
             fab.show();
-            fab.setImageResource(R.drawable.ic_search);
+            fab.setImageResource(R.drawable.ic_edit);
+        }
+
+
+        else if (navItemIndex ==4){
+
+            fab.show();
+            fab.setImageResource(R.drawable.ic_done);
+        }
+        else if (navItemIndex ==5){
+
+            fab.show();
+            fab.setImageResource(R.drawable.ic_call);
         }
         else
             fab.hide();

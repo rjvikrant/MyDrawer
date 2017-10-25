@@ -1,32 +1,27 @@
-package via.vik.mydrawer.fragments.PartnerPreferences;
+package via.vik.mydrawer.fragments;
 
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import via.vik.mydrawer.MainActivity;
 import via.vik.mydrawer.R;
-import via.vik.mydrawer.Widgets.MultiSpinner;
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link MyPreferencesFragment.OnFragmentInteractionListener} interface
+ * {@link AboutUsFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link MyPreferencesFragment#newInstance} factory method to
+ * Use the {@link AboutUsFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class MyPreferencesFragment extends Fragment implements MultiSpinner.MultiSpinnerListener {
+public class AboutUsFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -40,10 +35,10 @@ public class MyPreferencesFragment extends Fragment implements MultiSpinner.Mult
 
     EditText edt_fname,edt_lname;
     Boolean flag;
-    MultiSpinner subCast,religon,maritial_status,community,gotra,drink,smoke,skin_type,body_type,diet,spectacles;
+
     private OnFragmentInteractionListener mListener;
 
-    public MyPreferencesFragment() {
+    public AboutUsFragment() {
         // Required empty public constructor
     }
 
@@ -56,8 +51,8 @@ public class MyPreferencesFragment extends Fragment implements MultiSpinner.Mult
      * @return A new instance of fragment HomeFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static MyPreferencesFragment newInstance(String param1, String param2) {
-        MyPreferencesFragment fragment = new MyPreferencesFragment();
+    public static AboutUsFragment newInstance(String param1, String param2) {
+        AboutUsFragment fragment = new AboutUsFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -71,7 +66,7 @@ public class MyPreferencesFragment extends Fragment implements MultiSpinner.Mult
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
-            Log.e("load >>>","loading chat fragmnet");
+
         }
     }
 
@@ -81,11 +76,11 @@ public class MyPreferencesFragment extends Fragment implements MultiSpinner.Mult
 
         // Inflate the layout for this fragment
 
-            View rootView=inflater.inflate(R.layout.fragment_my_preferences, container, false);
+            View rootView=inflater.inflate(R.layout.fragment_about_us, container, false);
 
                 flag=true;
 
-        edt_fname=(EditText)rootView.findViewById(R.id.edt_name);
+       // edt_fname=(EditText)rootView.findViewById(R.id.edt_name);
        // edt_lname=(EditText) rootView.findViewById(R.id.edt_last_name);
 
 
@@ -95,27 +90,19 @@ public class MyPreferencesFragment extends Fragment implements MultiSpinner.Mult
                 Toast.makeText(getActivity(), name, Toast.LENGTH_SHORT).show();
 
                 if (flag) {
-                    edt_fname.setEnabled(true);
+                   // edt_fname.setEnabled(true);
                   //  edt_lname.setEnabled(true);
                     flag=false;
                 }else {
-                    edt_fname.setEnabled(false);
+                //    edt_fname.setEnabled(false);
                 //    edt_lname.setEnabled(false);
 
-                    Log.e("Text is >>",""+edt_fname.getText().toString());
+                  //  Log.e("Text is >>",""+edt_fname.getText().toString());
                     flag=true;
                 }
             }
         });
 
-
-        MultiSpinner subCast = (MultiSpinner) rootView.findViewById(R.id.multi_spinner_sub_community);
-        List<String> items=new ArrayList<>();
-        items.add("hello");
-        items.add("how are you");
-        items.add("??????");
-        items.add("!!!!!!!");
-        subCast.setItems(items, getString(R.string.for_all), this);
 
         return rootView;
     }
@@ -142,14 +129,6 @@ public class MyPreferencesFragment extends Fragment implements MultiSpinner.Mult
     public void onDetach() {
         super.onDetach();
         mListener = null;
-    }
-
-    @Override
-    public void onItemsSelected(boolean[] selected) {
-       for (int i=0;i<selected.length;i++){
-
-           Log.e("i>>",""+selected[i]);
-       }
     }
 
     /**

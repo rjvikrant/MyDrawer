@@ -142,14 +142,13 @@
                 android:text="Raashi"
                 android:layout_weight=".5"/>
 
-            <Spinner
-                android:textSize="@dimen/text_size"
-                android:layout_margin="5dp"
-                android:id="@+id/spi_raashi"
+            <via.vik.mydrawer.Widgets.MultiSpinner
+                android:id="@+id/multi_spinner_rashi"
+                android:textAlignment="center"
+                android:layout_height="match_parent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight=".5"
-                android:enabled="false"/>
+                android:enabled="false"
+                ></via.vik.mydrawer.Widgets.MultiSpinner>
 
         </LinearLayout>
 
@@ -228,14 +227,15 @@
                 android:text="Religion"
                 android:layout_weight=".5"/>
 
-            <Spinner
-                android:textSize="@dimen/text_size"
-                android:layout_margin="5dp"
-                android:id="@+id/spi_religion"
+
+            <via.vik.mydrawer.Widgets.MultiSpinner
+                android:id="@+id/multi_spinner_religion"
+                android:textAlignment="center"
+                android:layout_height="match_parent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight=".5"
-                android:enabled="false"/>
+                android:enabled="false"
+                ></via.vik.mydrawer.Widgets.MultiSpinner>
+
 
         </LinearLayout>
 
@@ -256,14 +256,14 @@
                 android:text="Community"
                 android:layout_weight=".5"/>
 
-            <Spinner
-                android:textSize="@dimen/text_size"
-                android:layout_margin="5dp"
-                android:id="@+id/spi_community"
+            <via.vik.mydrawer.Widgets.MultiSpinner
+                android:id="@+id/multi_spinner_community"
+                android:textAlignment="center"
+                android:layout_height="match_parent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight=".5"
-                android:enabled="false"/>
+                android:enabled="false"
+                ></via.vik.mydrawer.Widgets.MultiSpinner>
+
 
         </LinearLayout>
 
@@ -285,7 +285,7 @@
                 android:text="Sub Community"
                 android:layout_weight=".5"/>
 
-            <EditText
+          <!--  <EditText
                 android:fontFamily="sans-serif"
                 android:textSize="@dimen/text_size"
                 android:layout_margin="5dp"
@@ -293,7 +293,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight=".5"
-                android:enabled="false"/>
+                android:enabled="false"/>-->
+
+            <via.vik.mydrawer.Widgets.MultiSpinner
+                android:id="@+id/multi_spinner_sub_community"
+                android:textAlignment="center"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"></via.vik.mydrawer.Widgets.MultiSpinner>
 
         </LinearLayout>
 
@@ -315,15 +321,13 @@
                 android:text="Gotra"
                 android:layout_weight=".5"/>
 
-            <Spinner
-                android:textSize="@dimen/text_size"
-                android:layout_margin="5dp"
-                android:id="@+id/spi_gotra"
+            <via.vik.mydrawer.Widgets.MultiSpinner
+                android:id="@+id/multi_spinner_gotra"
+                android:textAlignment="center"
+                android:layout_height="match_parent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight=".5"
-                android:enabled="false"/>
-
+                android:enabled="false"
+                ></via.vik.mydrawer.Widgets.MultiSpinner>
         </LinearLayout>
 
         <LinearLayout
@@ -371,14 +375,13 @@
                 android:text="Marital Status"
                 android:layout_weight=".5"/>
 
-            <Spinner
-                android:textSize="@dimen/text_size"
-                android:layout_margin="5dp"
-                android:id="@+id/spi_martial_status"
+            <via.vik.mydrawer.Widgets.MultiSpinner
+                android:id="@+id/multi_spinner_martual_status"
+                android:textAlignment="center"
+                android:layout_height="match_parent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight=".5"
-                android:enabled="false"/>
+                android:enabled="false"
+                ></via.vik.mydrawer.Widgets.MultiSpinner>
 
         </LinearLayout>
 
@@ -399,14 +402,13 @@
                 android:text="Skin Tone"
                 android:layout_weight=".5"/>
 
-            <Spinner
-                android:textSize="@dimen/text_size"
-                android:layout_margin="5dp"
-                android:id="@+id/spi_skin_tone"
+            <via.vik.mydrawer.Widgets.MultiSpinner
+                android:id="@+id/multi_spinner_skin_tone"
+                android:textAlignment="center"
+                android:layout_height="match_parent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight=".5"
-                android:enabled="false"/>
+                android:enabled="false"
+                ></via.vik.mydrawer.Widgets.MultiSpinner>
 
         </LinearLayout>
 
@@ -427,14 +429,13 @@
                 android:text="Body Type"
                 android:layout_weight=".5"/>
 
-            <Spinner
-                android:textSize="@dimen/text_size"
-                android:layout_margin="5dp"
-                android:id="@+id/spi_body_type"
+            <via.vik.mydrawer.Widgets.MultiSpinner
+                android:id="@+id/multi_spinner_body_type"
+                android:textAlignment="center"
+                android:layout_height="match_parent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight=".5"
-                android:enabled="false"/>
+                android:enabled="false"
+                ></via.vik.mydrawer.Widgets.MultiSpinner>
 
         </LinearLayout>
 
@@ -459,14 +460,13 @@
                 android:text="Smoke"
                 android:layout_weight=".5"/>
 
-            <Spinner
-                android:textSize="@dimen/text_size"
-                android:layout_margin="5dp"
-                android:id="@+id/spi_smoke"
+            <via.vik.mydrawer.Widgets.MultiSpinner
+                android:id="@+id/multi_spinner_smoke"
+                android:textAlignment="center"
+                android:layout_height="match_parent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight=".5"
-                android:enabled="false"/>
+                android:enabled="false"
+                ></via.vik.mydrawer.Widgets.MultiSpinner>
 
         </LinearLayout>
 
@@ -487,14 +487,13 @@
                 android:text="Drink"
                 android:layout_weight=".5"/>
 
-            <Spinner
-                android:textSize="@dimen/text_size"
-                android:layout_margin="5dp"
-                android:id="@+id/spi_drink"
+            <via.vik.mydrawer.Widgets.MultiSpinner
+                android:id="@+id/multi_spinner_drink"
+                android:textAlignment="center"
+                android:layout_height="match_parent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight=".5"
-                android:enabled="false"/>
+                android:enabled="false"
+                ></via.vik.mydrawer.Widgets.MultiSpinner>
 
         </LinearLayout>
 
@@ -515,14 +514,13 @@
                 android:text="Spectacles Lens"
                 android:layout_weight=".5"/>
 
-            <Spinner
-                android:textSize="@dimen/text_size"
-                android:layout_margin="5dp"
-                android:id="@+id/spi_spectacles_lens"
+            <via.vik.mydrawer.Widgets.MultiSpinner
+                android:id="@+id/multi_spinner_spectacles_lens"
+                android:textAlignment="center"
+                android:layout_height="match_parent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight=".5"
-                android:enabled="false"/>
+                android:enabled="false"
+                ></via.vik.mydrawer.Widgets.MultiSpinner>
 
         </LinearLayout>
 
@@ -545,14 +543,13 @@
                 android:text="Diet"
                 android:layout_weight=".5"/>
 
-            <Spinner
-                android:textSize="@dimen/text_size"
-                android:layout_margin="5dp"
-                android:id="@+id/spi_diet"
+            <via.vik.mydrawer.Widgets.MultiSpinner
+                android:id="@+id/multi_spinner_diet"
+                android:textAlignment="center"
+                android:layout_height="match_parent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight=".5"
-                android:enabled="false"/>
+                android:enabled="false"
+                ></via.vik.mydrawer.Widgets.MultiSpinner>
 
         </LinearLayout>
 

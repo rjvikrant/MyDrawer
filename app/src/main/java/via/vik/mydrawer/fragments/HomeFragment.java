@@ -109,9 +109,9 @@ public class HomeFragment extends Fragment {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getChildFragmentManager());
-        adapter.addFrag(new RequestFragment(mainActivity), "ONE");
+        adapter.addFrag(new RequestFragment(), "ONE");
         adapter.addFrag(new ChatFragment(), "TWO");
-        adapter.addFrag(new RequestFragment(), "THREE");
+        adapter.addFrag(new RequestsFragment(), "THREE");
         viewPager.setAdapter(adapter);
 
 

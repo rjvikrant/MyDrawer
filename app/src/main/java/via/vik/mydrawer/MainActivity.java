@@ -76,11 +76,8 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-
                 fragmentCommunicator.passData("Hello");
-                fab.setImageResource(R.drawable.ic_chat);
+              //  fab.setImageResource(R.drawable.ic_chat);
             }
         });
 
@@ -292,9 +289,14 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void toggleFab() {
-        if (navItemIndex == 1 )
+        if (navItemIndex == 0 )
             fab.show();
 
+        else if (navItemIndex ==1){
+            fab.setImageResource(R.drawable.ic_search);
+            fab.show();
+
+        }
         else if (navItemIndex ==2){
 
             fab.show();

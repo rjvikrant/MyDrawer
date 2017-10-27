@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import via.vik.mydrawer.R;
 import via.vik.mydrawer.adapters.CustomAdapter;
 import via.vik.mydrawer.adapters.CustomAdapterChoice;
-import via.vik.mydrawer.listeners.RecyclerTouchListener;
+import via.vik.mydrawer.listeners.RecyclerTouchListenerButtons;
 
 /**
  * Created by MR__PN on 11-10-2017.
@@ -81,7 +81,7 @@ public class RequestsFragment extends Fragment {
         setRecyclerViewLayoutManager(LayoutManagerType.LINEAR_LAYOUT_MANAGER);
 
 
-        mRecyclerView.addOnItemTouchListener(new RecyclerTouchListener(getContext(), mRecyclerView, new RecyclerTouchListener.ClickListener() {
+        mRecyclerView.addOnItemTouchListener(new RecyclerTouchListenerButtons(getContext(), mRecyclerView, new RecyclerTouchListenerButtons.ClickListener() {
             @Override
             public void onClick(View view, int position) {
 

@@ -1,5 +1,7 @@
 package via.vik.mydrawer.fragments;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
@@ -9,9 +11,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import via.vik.mydrawer.MainActivity;
 import via.vik.mydrawer.R;
 import via.vik.mydrawer.adapters.CustomAdapter;
 import via.vik.mydrawer.listeners.RecyclerTouchListener;
@@ -92,7 +96,14 @@ public class ChatFragment extends Fragment {
             }
         }));
 
+        ((MainActivity) getActivity()).passVal(new MainActivity.FragmentCommunicator() {
+            @Override
+            public void passData(String name) {
+                Toast.makeText(getActivity(), name, Toast.LENGTH_SHORT).show();
 
+                showDialog();
+            }
+        });
 
       /*  mLinearLayoutRadioButton = (RadioButton) rootView.findViewById(R.id.linear_layout_rb);
         mLinearLayoutRadioButton.setOnClickListener(new View.OnClickListener() {
@@ -111,6 +122,48 @@ public class ChatFragment extends Fragment {
         });*/
 
         return rootView;
+    }
+
+    private void showDialog() {
+
+        LayoutInflater li = LayoutInflater.from(getActivity());
+        View promptsView = li.inflate(R.layout.prompt_search, null);
+
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+                getActivity());
+
+        // set prompts.xml to alertdialog builder
+        alertDialogBuilder.setView(promptsView);
+
+      /*  final EditText userInput = (EditText) promptsView
+                .findViewById(R.id.editTextDialogUserInput);*/
+
+        // set dialog message
+        alertDialogBuilder
+                .setCancelable(false)
+                .setPositiveButton("OK",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog,
+                                                int id) {
+                                // get user input and set it to result
+                                // edit text
+                                Toast.makeText(getActivity(), "Called", Toast.LENGTH_SHORT).show();
+                            }
+                        })
+                .setNegativeButton("Cancel",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog,
+                                                int id) {
+                                dialog.cancel();
+                            }
+                        });
+
+        // create alert dialog
+        AlertDialog alertDialog = alertDialogBuilder.create();
+
+        // show it
+        alertDialog.show();
+
     }
 
     /**

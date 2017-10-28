@@ -4,25 +4,22 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.Toast;
 
-import via.vik.mydrawer.MainActivity;
 import via.vik.mydrawer.R;
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link BasicInfoFragment.OnFragmentInteractionListener} interface
+ * {@link MatchCompatibilityFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link BasicInfoFragment#newInstance} factory method to
+ * Use the {@link MatchCompatibilityFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class BasicInfoFragment extends Fragment {
+public class MatchCompatibilityFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -39,7 +36,7 @@ public class BasicInfoFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public BasicInfoFragment() {
+    public MatchCompatibilityFragment() {
         // Required empty public constructor
     }
 
@@ -52,8 +49,8 @@ public class BasicInfoFragment extends Fragment {
      * @return A new instance of fragment HomeFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static BasicInfoFragment newInstance(String param1, String param2) {
-        BasicInfoFragment fragment = new BasicInfoFragment();
+    public static MatchCompatibilityFragment newInstance(String param1, String param2) {
+        MatchCompatibilityFragment fragment = new MatchCompatibilityFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -67,7 +64,7 @@ public class BasicInfoFragment extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
-            Log.e("load >>>","loading chat fragmnet");
+
         }
     }
 
@@ -77,32 +74,33 @@ public class BasicInfoFragment extends Fragment {
 
         // Inflate the layout for this fragment
 
-            View rootView=inflater.inflate(R.layout.fragment_basic_info, container, false);
+            View rootView=inflater.inflate(R.layout.fragment_match_compatibility, container, false);
 
                 flag=true;
 
-        edt_fname=(EditText)rootView.findViewById(R.id.edt_name);
+       // edt_fname=(EditText)rootView.findViewById(R.id.edt_name);
        // edt_lname=(EditText) rootView.findViewById(R.id.edt_last_name);
 
-      /*   ((MainActivity) getActivity()).passVal(new MainActivity.FragmentCommunicator() {
+
+      /*  ((MainActivity) getActivity()).passVal(new MainActivity.FragmentCommunicator() {
             @Override
             public void passData(String name) {
                 Toast.makeText(getActivity(), name, Toast.LENGTH_SHORT).show();
 
                 if (flag) {
-                    edt_fname.setEnabled(true);
+                   // edt_fname.setEnabled(true);
                   //  edt_lname.setEnabled(true);
                     flag=false;
                 }else {
-                    edt_fname.setEnabled(false);
+                //    edt_fname.setEnabled(false);
                 //    edt_lname.setEnabled(false);
 
-                    Log.e("Text is >>",""+edt_fname.getText().toString());
+                  //  Log.e("Text is >>",""+edt_fname.getText().toString());
                     flag=true;
                 }
             }
-        });*/
-
+        });
+*/
 
         return rootView;
     }

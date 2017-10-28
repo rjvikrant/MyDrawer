@@ -84,7 +84,7 @@ public class AboutMeInfoFragment extends Fragment {
        // edt_lname=(EditText) rootView.findViewById(R.id.edt_last_name);
 
 
-        ((MainActivity) getActivity()).passVal(new MainActivity.FragmentCommunicator() {
+        /*((MainActivity) getActivity()).passVal(new MainActivity.FragmentCommunicator() {
             @Override
             public void passData(String name) {
                 Toast.makeText(getActivity(), name, Toast.LENGTH_SHORT).show();
@@ -102,7 +102,7 @@ public class AboutMeInfoFragment extends Fragment {
                 }
             }
         });
-
+*/
 
         return rootView;
     }

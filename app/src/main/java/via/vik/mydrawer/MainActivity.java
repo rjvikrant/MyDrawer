@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity
     NavigationView navigationView;
     DrawerLayout drawer;
     public static int navItemIndex = 0;
-    FloatingActionButton fab;
+   public FloatingActionButton fab;
     private Handler mHandler;
     public MainActivity mainActivity;
 
@@ -76,6 +76,7 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 fragmentCommunicator.passData("Hello");
               //  fab.setImageResource(R.drawable.ic_chat);
             }
@@ -289,11 +290,11 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void toggleFab() {
-        if (navItemIndex == 0 )
-            fab.show();
-
-        else if (navItemIndex ==1){
+        if (navItemIndex == 0 ) {
             fab.setImageResource(R.drawable.ic_search);
+            fab.show();
+        }
+        else if (navItemIndex ==1){
             fab.show();
 
         }

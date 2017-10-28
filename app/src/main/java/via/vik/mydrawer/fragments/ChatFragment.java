@@ -2,6 +2,7 @@ package via.vik.mydrawer.fragments;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
@@ -16,6 +17,7 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 import via.vik.mydrawer.MainActivity;
+import via.vik.mydrawer.ProfileActivity;
 import via.vik.mydrawer.R;
 import via.vik.mydrawer.adapters.CustomAdapter;
 import via.vik.mydrawer.listeners.RecyclerTouchListener;
@@ -30,10 +32,14 @@ public class ChatFragment extends Fragment {
     private static final String KEY_LAYOUT_MANAGER = "layoutManager";
     private static final int SPAN_COUNT = 2;
     private static final int DATASET_COUNT = 60;
+    MainActivity mainActivity;
 
     private enum LayoutManagerType {
         GRID_LAYOUT_MANAGER,
         LINEAR_LAYOUT_MANAGER
+    }
+    public ChatFragment(MainActivity mainActivity) {
+        this.mainActivity = mainActivity;
     }
 
     protected LayoutManagerType mCurrentLayoutManagerType;
@@ -79,8 +85,19 @@ public class ChatFragment extends Fragment {
         mRecyclerView.setAdapter(mAdapter);
 
 
+        mainActivity.passVal(new MainActivity.FragmentCommunicator() {
+            @Override
+            public void passData(String name) {
+                Toast.makeText(getActivity(), name, Toast.LENGTH_SHORT).show();
+
+                showDialog();
+            }
+        });
+
 
         setRecyclerViewLayoutManager(LayoutManagerType.LINEAR_LAYOUT_MANAGER);
+
+
 
 
         mRecyclerView.addOnItemTouchListener(new RecyclerTouchListener(getContext(), mRecyclerView, new RecyclerTouchListener.ClickListener() {
@@ -88,6 +105,8 @@ public class ChatFragment extends Fragment {
             public void onClick(View view, int position) {
 
                 Toast.makeText(getContext(), position+ " is selected!", Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(getContext(),ProfileActivity.class);
+                startActivity(intent);
             }
 
             @Override
@@ -96,14 +115,7 @@ public class ChatFragment extends Fragment {
             }
         }));
 
-        ((MainActivity) getActivity()).passVal(new MainActivity.FragmentCommunicator() {
-            @Override
-            public void passData(String name) {
-                Toast.makeText(getActivity(), name, Toast.LENGTH_SHORT).show();
 
-                showDialog();
-            }
-        });
 
       /*  mLinearLayoutRadioButton = (RadioButton) rootView.findViewById(R.id.linear_layout_rb);
         mLinearLayoutRadioButton.setOnClickListener(new View.OnClickListener() {

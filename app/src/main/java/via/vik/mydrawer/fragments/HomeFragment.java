@@ -89,6 +89,7 @@ public class HomeFragment extends Fragment {
 
          tabLayout = (TabLayout) view.findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
+        mainActivity.fab.hide();
         setupTabIcons();
         //tabLayout.setupWithViewPager(viewPager);
 
@@ -110,7 +111,7 @@ public class HomeFragment extends Fragment {
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getChildFragmentManager());
         adapter.addFrag(new RequestFragment(), "ONE");
-        adapter.addFrag(new ChatFragment(), "TWO");
+        adapter.addFrag(new ChatFragment(mainActivity), "TWO");
         adapter.addFrag(new RequestsFragment(), "THREE");
         viewPager.setAdapter(adapter);
 
@@ -124,6 +125,11 @@ public class HomeFragment extends Fragment {
             @Override
             public void onPageSelected(int position) {
                 mainActivity.getToolbar().setTitle(title[position]);
+                if (position ==1){
+
+                    mainActivity.fab.show();
+                }else
+                    mainActivity.fab.hide();
             }
 
             @Override

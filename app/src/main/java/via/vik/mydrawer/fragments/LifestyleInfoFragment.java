@@ -83,7 +83,7 @@ public class LifestyleInfoFragment extends Fragment {
        // edt_fname=(EditText)rootView.findViewById(R.id.edt_name);
        // edt_lname=(EditText) rootView.findViewById(R.id.edt_last_name);
 
-
+/*
         ((MainActivity) getActivity()).passVal(new MainActivity.FragmentCommunicator() {
             @Override
             public void passData(String name) {
@@ -101,7 +101,7 @@ public class LifestyleInfoFragment extends Fragment {
                     flag=true;
                 }
             }
-        });
+        });*/
 
 
         return rootView;

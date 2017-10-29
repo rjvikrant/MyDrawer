@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyDrawer.iml" filepath="$PROJECT_DIR$/MyDrawer.iml" />
-      <module fileurl="file://C:\Users\MR__PN\Desktop\MyDrawer-master\MyDrawer.iml" filepath="C:\Users\MR__PN\Desktop\MyDrawer-master\MyDrawer.iml" />
+      <module fileurl="file://C:/Users/MR__PN/Desktop/MyDrawer-master/MyDrawer.iml" filepath="C:/Users/MR__PN/Desktop/MyDrawer-master/MyDrawer.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

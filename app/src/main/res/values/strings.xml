@@ -59,4 +59,5 @@
     </string>
     <string name="name">Vikrant A</string>
     <string name="for_all">-Select-</string>
+    <string name="title_activity_profile_cover">ProfileCoverActivity</string>
 </resources>

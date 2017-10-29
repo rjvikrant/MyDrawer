@@ -34,8 +34,7 @@
         <activity
             android:name=".AboutUs"
             android:label="@string/title_activity_about_us"
-            android:parentActivityName=".MainActivity"
-           />
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".SplashScreen"
             android:theme="@style/AppTheme">
@@ -50,8 +49,7 @@
             android:parentActivityName=".LoginActivity" />
         <activity
             android:name=".SignUpActivity"
-            android:label="@string/title_activity_sign_up"
-         >
+            android:label="@string/title_activity_sign_up">
 
             <!--
             <intent-filter>
@@ -62,10 +60,13 @@
             -->
 
         </activity>
-        <activity android:name=".ProfileActivity"
-            android:parentActivityName=".MainActivity">
-
-        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".ProfileCoverActivity"
+            android:label="@string/title_activity_profile_cover"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
